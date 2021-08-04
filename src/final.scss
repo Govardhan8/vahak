@@ -1,0 +1,346 @@
+img {
+	padding: 2rem 5rem;
+	width: 7.5%;
+	object-fit: contain;
+	@media (max-width: 450px) {
+		width: 20%;
+		padding: 1rem 3rem;
+	}
+}
+.stepsBar {
+	background-color: #0d072e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 25vh;
+	h1 {
+		color: white;
+		font-size: 2.75rem;
+		text-align: center;
+	}
+	@media (max-width: 450px) {
+		width: 100%;
+		height: 15vh;
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
+}
+input,
+select {
+	max-width: 50rem;
+	width: 40vw;
+	height: 3rem;
+	font-weight: bold;
+	@media (max-width: 450px) {
+		width: 21rem;
+		height: 7.5vh;
+		display: flex;
+		margin: 0 auto;
+		border: 1px solid lightslategray;
+		font-size: 1.25rem;
+		background: white;
+	}
+	@media (min-width: 450px) {
+		font-size: 1.5rem;
+	}
+}
+label {
+	@media (max-width: 450px) {
+		font-size: 1rem;
+		margin-left: 0.5rem;
+		transform: translateY(-0.75rem);
+		width: inherit;
+		z-index: 100;
+	}
+	@media (min-width: 450px) {
+		font-size: 1.75rem;
+	}
+}
+button {
+	color: white;
+	background: rgb(7, 126, 245);
+	border: rgb(7, 126, 245);
+	font-size: 1.25rem;
+	padding: 1rem 2rem;
+	display: flex;
+	margin: 1rem auto;
+	@media (min-width: 450px) {
+		display: flex;
+		width: 40vw;
+		height: 3rem;
+		justify-content: center;
+	}
+}
+option {
+	font-size: 1rem;
+}
+.error {
+	color: red;
+	transform: translate(1rem);
+}
+.TextField {
+	border: 1px solid darkgrey;
+	display: flex;
+	flex-direction: column;
+	width: 40.3vw;
+	margin: 2rem auto;
+	@media (max-width: 450px) {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem auto;
+		width: 22rem;
+		label {
+			position: absolute;
+			background-color: white;
+			width: inherit;
+			max-width: 35%;
+			transform: translateY(-50%);
+		}
+	}
+	input,
+	select {
+		border: none;
+		outline: none;
+	}
+	label {
+		position: absolute;
+		background-color: white;
+		transform: translateY(-60%);
+	}
+}
+.split {
+	@media (min-width: 450px) {
+		display: flex;
+		width: 40.3vw;
+		margin: 0 auto;
+		justify-content: space-between;
+		.TextField {
+			min-width: 19vw;
+			margin-bottom: 0rem;
+		}
+		.TextField:nth-child(1) {
+			margin-right: 1rem;
+			border: 1px solid darkgrey;
+		}
+	}
+}
+.editbox {
+	display: flex;
+	border-bottom: 2px solid whitesmoke;
+	padding: 4rem 0;
+	@media (min-width: 450px) {
+		max-width: 50rem;
+		margin-left: 30%;
+		width: 40%;
+		.left {
+			margin: 1rem -2rem 1rem 2rem;
+			.editHead {
+				min-width: 15rem;
+				font-size: 1rem;
+				color: lightslategray;
+			}
+			h2 {
+				font-size: 1.25rem;
+				font-weight: bold;
+			}
+		}
+	}
+	@media (max-width: 450px) {
+		margin-left: 5%;
+		width: 90%;
+		.left {
+			margin: 1rem;
+			.editHead {
+				font-size: 1rem;
+				color: lightslategray;
+			}
+			h2 {
+				font-size: 1.25rem;
+				font-weight: bold;
+			}
+		}
+		.right {
+			margin: 0 1rem;
+			.editHead {
+				font-size: 1rem;
+				color: lightslategray;
+			}
+		}
+	}
+}
+.Page2 {
+	@media (min-width: 450px) {
+		.AmountContainer {
+			.Amount {
+				display: flex;
+				margin: 2rem 0 2rem 35%;
+				justify-content: center;
+				span {
+					font-size: 5rem;
+				}
+				.amountInput {
+					border: none;
+					outline: none;
+					font-size: 5rem;
+					height: 6rem;
+				}
+			}
+		}
+		.rateContainer {
+			display: flex;
+			width: 40rem;
+			margin: 2.5rem auto;
+			label {
+				margin-left: -18rem;
+				font-size: 1.25rem;
+			}
+			input {
+				height: 1.75rem;
+			}
+		}
+	}
+	@media (max-width: 450px) {
+		margin: 2rem 0;
+		.AmountContainer {
+			.Amount {
+				.AmountSpan {
+					display: flex;
+					align-items: center;
+					margin-left: 10rem;
+					span {
+						font-size: 3rem;
+					}
+					.amountInput {
+						margin-left: 0.5rem;
+						width: 10rem;
+						border: none;
+						outline: none;
+						font-size: 3rem;
+					}
+				}
+			}
+			.rateContainer {
+				display: flex;
+				width: 20rem;
+				margin: 2.5rem auto;
+				label {
+					margin-left: -5rem;
+					font-size: 1.25rem;
+					margin-top: 1rem;
+				}
+				input {
+					height: 1.75rem;
+				}
+			}
+		}
+	}
+}
+.btn {
+	@media (max-width: 450px) {
+		min-width: 20rem;
+		display: flex;
+		justify-content: center;
+	}
+}
+.second {
+	@media (min-width: 450px) {
+		display: flex;
+		margin: 0rem auto;
+		.left {
+			margin-left: 7.5%;
+			.editHead {
+				font-weight: bold;
+			}
+			h2 {
+				font-size: 1.5rem;
+			}
+			margin-right: 25%;
+		}
+		.right {
+			margin-top: 2rem;
+			.editHead {
+				font-size: 1.25rem;
+				color: lightslategray;
+				font-weight: normal;
+			}
+		}
+	}
+	@media (max-width: 450px) {
+		margin-top: -2rem;
+		.left {
+			h2 {
+				font-size: 1.5rem;
+			}
+			margin-left: 1rem;
+		}
+		.right {
+			h1 {
+				display: flex;
+			}
+			margin-top: 2rem;
+			margin-left: 5rem;
+		}
+	}
+}
+.OTPInput {
+	@media (min-width: 450px) {
+		display: flex;
+		width: 40%;
+		margin: 0 30%;
+		.left {
+			margin: 1rem 0 1rem 5rem;
+			width: 70%;
+		}
+		.right {
+			margin: 1rem 5rem 0 -7.5rem;
+			width: 30%;
+		}
+	}
+	@media (max-width: 450px) {
+		display: flex;
+		p {
+			margin: 1rem 0;
+			width: 80%;
+			margin-left: 10% !important;
+		}
+		.right {
+			margin-right: 10%;
+		}
+	}
+}
+#divOuter {
+	width: 190px;
+	overflow-x: hidden;
+	margin: 1rem auto;
+	#divInner {
+		input {
+			padding-left: 8px;
+			letter-spacing: 35px;
+			outline: none;
+			border: none;
+			background-image: linear-gradient(
+				to left,
+				black 70%,
+				rgba(255, 255, 255, 0) 0%
+			);
+			background-position: bottom;
+			background-size: 50px 1px;
+			background-repeat: repeat-x;
+			background-position-x: 35px;
+			width: 250px;
+			min-width: 250px;
+		}
+	}
+}
+.Resend {
+	color: rgb(7, 126, 245);
+	background: white;
+	border: white;
+}
+.edit {
+	color: rgb(7, 126, 245);
+	background: white;
+	border: white;
+}
